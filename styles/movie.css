@@ -1,0 +1,57 @@
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .movie {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 12px;
+}
+
+main .movie .rating{
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  justify-content: center;
+}
+
+.rating strong{
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+
+.movie span{
+  font-size: 1.8rem;
+}
+
+.movie h1{
+  font-size: 9rem;
+  font-weight: 600;
+}
+
+.movie p{
+  width: 100%;
+  max-width: 400px;
+}
+
+.movie button{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  width: 260px;
+  border-radius: 70px;
+  padding: 0 45px;
+  background: var(--linear);
+  transition: filter ease-in 0.2s;
+}
+
+.movie button:hover{
+  filter: brightness(0.6);
+}
